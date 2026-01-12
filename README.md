@@ -8,8 +8,8 @@ A ComfyUI plugin for quick image size selection with curated presets optimized f
 
 ## Features
 
-- 🎯 **11 curated presets** - Only the sizes you actually use
-- 📐 **1024×1024 default** - Ready for SDXL/Flux out of the box
+- 🎯 **11 curated presets** - All aspect ratios with both orientations
+- 📐 **1328×1328 default** - Ready for SDXL/Flux out of the box
 - ✂️ **Flexible cropping** - Center, Top-Left, Bottom-Right, Scale to Fit, Stretch
 
 ## Installation
@@ -65,15 +65,17 @@ git clone https://github.com/jluo-github/comfyui-easy-resize.git
 
 | Preset | Resolution | Use Case |
 |--------|------------|----------|
-| **Square** | 1024×1024 | Default, balanced |
-| **Standard Portrait** | 896×1152 | Characters, headshots |
-| **Tall Portrait** | 832×1216 | Full body, posters |
-| **Phone Wallpaper** | 768×1344 | Mobile screens |
-| **Standard Landscape** | 1152×896 | Scenes, environments |
-| **Classic Photo** | 1216×832 | Traditional photo ratio |
-| **Widescreen** | 1344×768 | Desktop wallpapers |
-| **Cinematic Ultrawide** | 1536×640 | Movie frames |
-| **High Detail Square** | 1280×1280 | High VRAM, extra detail |
+| **Square** | 1328×1328 | Default, balanced |
+| **Ultrawide Landscape** | 2016×928 | Cinematic ultrawide |
+| **Ultrawide Portrait** | 928×2016 | Tall ultrawide |
+| **Widescreen Landscape** | 1664×928 | Desktop wallpapers |
+| **Widescreen Portrait** | 928×1664 | Phone screens |
+| **Classic Landscape** | 1472×1104 | Traditional 4:3 |
+| **Classic Portrait** | 1104×1472 | Portrait 3:4 |
+| **Standard Landscape** | 1584×1056 | Photo 3:2 |
+| **Standard Portrait** | 1056×1584 | Photo 2:3 |
+| **Wide Landscape** | 1856×928 | Panoramic 2:1 |
+| **Tall Portrait** | 928×1856 | Tall 1:2 |
 
 ## Crop Methods
 

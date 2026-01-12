@@ -11,25 +11,27 @@ from __future__ import annotations
 # ============================================================================
 
 SIZE_PRESETS: dict[str, tuple[int, int]] = {
-    # --- The Essentials ---
-    "1024x1024 (1:1) - Square": (1024, 1024),
-    # --- Portrait (Phone/Character) ---
-    "864x1152 (3:4) - Classic Portrait": (864, 1152),
-    "896x1152 (7:9) - Standard Portrait": (896, 1152),
-    "832x1216 (2:3) - Tall Portrait": (832, 1216),
-    "768x1344 (9:16) - Phone Wallpaper": (768, 1344),
-    # --- Landscape (Desktop/Movie) ---
-    "1152x864 (4:3) - Classic Landscape": (1152, 864),
-    "1152x896 (9:7) - Standard Landscape": (1152, 896),
-    "1216x832 (3:2) - Classic Photo": (1216, 832),
-    "1344x768 (16:9) - Widescreen": (1344, 768),
-    "1536x640 (21:9) - Cinematic Ultrawide": (1536, 640),
-    # --- The "King Size" (High VRAM Only) ---
-    "1280x1280 (1:1) - High Detail Square": (1280, 1280),
+    # --- Square ---
+    "1328x1328 (1:1) - Square": (1328, 1328),
+    # --- Ultrawide ---
+    "2016x928 (21:9) - Ultrawide Landscape": (2016, 928),
+    "928x2016 (9:21) - Ultrawide Portrait": (928, 2016),
+    # --- Widescreen ---
+    "1664x928 (16:9) - Widescreen Landscape": (1664, 928),
+    "928x1664 (9:16) - Widescreen Portrait": (928, 1664),
+    # --- Classic Photo ---
+    "1472x1104 (4:3) - Classic Landscape": (1472, 1104),
+    "1104x1472 (3:4) - Classic Portrait": (1104, 1472),
+    # --- Standard Photo ---
+    "1584x1056 (3:2) - Standard Landscape": (1584, 1056),
+    "1056x1584 (2:3) - Standard Portrait": (1056, 1584),
+    # --- Tall/Wide ---
+    "1856x928 (2:1) - Wide Landscape": (1856, 928),
+    "928x1856 (1:2) - Tall Portrait": (928, 1856),
 }
 
 # Default selection
-DEFAULT_SIZE_PRESET = "1024x1024 (1:1) - Square"
+DEFAULT_SIZE_PRESET = "1328x1328 (1:1) - Square"
 
 # List of preset names for dropdown
 SIZE_PRESET_LIST: list[str] = list(SIZE_PRESETS.keys())
